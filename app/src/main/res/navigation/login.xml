@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/login"
+    android:id="@+id/login">
+
+    <fragment android:id="@+id/login"
+        tools:layout="@layout/login_fragment"
+        android:label=""
+        android:name="com.noname.coffee_gate.presentation.authentication.login.LoginFragment"
+        >
+
+        <action android:id="@+id/go_to_register"
+            />
+    </fragment>
+
+    <fragment android:id="@+id/register"
+        tools:layout="@layout/register_fragment"
+        android:label=""
+        android:name="com.noname.coffee_gate.presentation.authentication.register.RegisterFragment"
+        />
+
+    <fragment android:id="@+id/profile"
+        tools:layout="@layout/profile_fragment"
+        android:label=""
+        android:name="com.noname.coffee_gate.presentation.profile.ProfileFragment"
+        />
+
+
+    <fragment android:id="@+id/forget_password"
+        tools:layout="@layout/forget_password_fragment"
+        android:label=""
+        android:name="com.noname.coffee_gate.presentation.authentication.forgetpassword.ForgetPasswordFragment"
+        />
+
+
+</navigation>

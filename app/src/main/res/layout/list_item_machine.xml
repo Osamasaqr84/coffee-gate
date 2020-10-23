@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="8dp"
+    android:background="@drawable/round_machine_item"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/machine_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/machine_name"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        app:layout_constraintEnd_toStartOf="@+id/off_machine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/location"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:minWidth="50dp"
+        android:src="@drawable/location"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/machine_name" />
+
+    <TextView
+        android:id="@+id/absolute_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="6 Min"
+        android:textStyle="bold"
+        android:textSize="@dimen/normal_text"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/location"
+        app:layout_constraintStart_toEndOf="@+id/machine_name"
+        app:layout_constraintTop_toTopOf="@+id/machine_name" />
+
+
+    <TextView
+        android:id="@+id/machine_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="123 machine addreess"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/text_color"
+        app:layout_constraintEnd_toStartOf="@+id/location"
+        app:layout_constraintStart_toStartOf="@+id/machine_name"
+        app:layout_constraintTop_toBottomOf="@+id/machine_name"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/home"
+    android:id="@+id/home">
+
+    <fragment android:id="@+id/home"
+        tools:layout="@layout/home_fragment"
+        android:label=""
+        android:name="com.noname.coffee_gate.presentation.home.HomeFragment"
+        >
+
+        <action android:id="@+id/action_to_cart"
+            app:destination="@+id/cart"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_close_exit"
+            />
+
+        <action android:id="@+id/action_to_menus"
+            app:destination="@+id/menueslist"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_close_exit"
+            >
+
+            <argument android:name="machine_id"
+                android:defaultValue="@null"
+                app:argType="string"
+                app:nullable="true"
+                />
+        </action>
+
+    </fragment>
+
+    <include app:graph="@navigation/cart" />
+    <include app:graph="@navigation/menueslist" />
+    <include app:graph="@navigation/menuedetails" />
+    <include app:graph="@navigation/contact_us" />
+    <include app:graph="@navigation/profile" />
+    <include app:graph="@navigation/favorites" />
+    <include app:graph="@navigation/language" />
+    <include app:graph="@navigation/notifications" />
+    <include app:graph="@navigation/orders" />
+    <include app:graph="@navigation/termes" />
+    <include app:graph="@navigation/login" />
+    <include app:graph="@navigation/machine_profile" />
+</navigation>

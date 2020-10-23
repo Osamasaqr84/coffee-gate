@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    android:background="@drawable/round_machine_item"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Osama Saqr"
+        android:textStyle="bold"
+        android:textSize="@dimen/larg_text"
+        android:textColor="@color/text_color"
+        />
+
+    <TextView
+        android:id="@+id/user_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01151355233"
+        android:textSize="@dimen/larg_text"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="3"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Time of this Order"
+            android:layout_weight="2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 Min"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_total"
+        android:textColor="@color/text_color"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Total 220 EGP"
+        />
+
+    <TextView
+        android:id="@+id/order_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:minWidth="120dp"
+        android:padding="8dp"
+        android:text="@string/order_details"
+        android:background="@drawable/round_buy_again"
+        />
+
+    <TextView
+        android:id="@+id/end_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:minWidth="120dp"
+        android:padding="8dp"
+        android:text="@string/end_request"
+        android:background="@drawable/round_end"
+        />
+
+</LinearLayout>

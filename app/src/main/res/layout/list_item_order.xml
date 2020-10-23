@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/round_corner_shadow"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:paddingBottom="8dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/order_img"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/product_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/order_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="20/5/2020"
+        android:textColor="@color/text_color"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/order_total"
+        app:layout_constraintStart_toStartOf="@+id/order_img"
+        app:layout_constraintTop_toBottomOf="@+id/order_img" />
+
+    <TextView
+        android:id="@+id/machine_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:maxLines="2"
+        android:text="Elrehab 2"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/mini_larg_text"
+        app:layout_constraintStart_toStartOf="@+id/order_date"
+        app:layout_constraintTop_toBottomOf="@+id/order_date" />
+
+    <TextView
+        android:id="@+id/order_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:maxLines="2"
+        android:text="Total 203 EGP"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/normal_text"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/order_date" />
+
+    <TextView
+        android:id="@+id/buy_again"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/round_buy_again"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="Buy again"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_text"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/machine_name"
+        app:layout_constraintWidth_percent="0.2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

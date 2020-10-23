@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/termes"
+    android:id="@+id/termes">
+
+    <fragment android:id="@+id/termes"
+        tools:layout="@layout/termes_fragment"
+        android:label=""
+        android:name="com.noname.coffee_gate.presentation.termes_condition.TermesFragment"
+        />
+
+</navigation>

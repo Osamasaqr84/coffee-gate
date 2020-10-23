@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#24130B</color>
+    <color name="colorPrimaryDark">#20110B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorback">#653797</color>
+    <color name="departscolorback">#F0F0F0</color>
+    <color name="departstxtcolor">#653797</color>
+    <color name="coffee_color">#A58A5E</color>
+    <color name="coffee_light_color">#83A58A5E</color>
+    <color name="graytxtcolor">#AA9ABB</color>
+    <color name="logincolor">#783B8B</color>
+    <color name="duskYellow">#FFEB3B</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="green">#4DBA4D</color>
+    <color name="white">#fff</color>
+    <color name="gray">#908D94</color>
+    <color name="text_color">#24130B</color>
+    <color name="red">#ff0000</color>
+    <color name="shadow_hack_level_1">#E7E7E7</color>
+    <color name="shadow_hack_level_2">#D4D7DA</color>
+    <color name="shadow_hack_level_3">#D4D8DB</color>
+    <color name="blurer_color">#8ABFBDBD</color>
+    <color name="description_color">#8E8E93</color>
+    <color name="gray_dark">#AFB3B9</color>
+    <color name="dark_gray">#787A7C</color>
+    <color name="coffee_color_gray">#A68A5E</color>
+    <color name="item_back_color">#FAF5F5</color>
+
+</resources>

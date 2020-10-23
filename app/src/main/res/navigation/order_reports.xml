@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/reports"
+    android:id="@+id/order_reports">
+
+    <fragment android:id="@+id/reports"
+        tools:layout="@layout/today_reports_fragment"
+        android:label=""
+        android:name="com.noname.coffee_gate.presentation.today_reports.TodayReportsFragment"
+        />
+
+
+    <fragment android:id="@+id/order_details"
+        tools:layout="@layout/order_details_fragment"
+        android:label=""
+        android:name="com.noname.coffee_gate.presentation.orders.OrderDetailsFragment"
+        />
+
+
+
+    <include app:graph="@navigation/contact_us" />
+    <include app:graph="@navigation/profile" />
+    <include app:graph="@navigation/language" />
+    <include app:graph="@navigation/notifications" />
+    <include app:graph="@navigation/termes" />
+    <include app:graph="@navigation/login" />
+
+</navigation>

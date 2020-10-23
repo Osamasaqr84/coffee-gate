@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/language"
+    android:id="@+id/language">
+
+    <fragment android:id="@+id/language"
+        tools:layout="@layout/language_fragment"
+        android:label=""
+        android:name="com.noname.coffee_gate.presentation.LanguageFragment"
+        />
+
+</navigation>

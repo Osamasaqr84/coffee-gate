@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/menueslist"
+    android:id="@+id/menueslist">
+
+    <fragment android:id="@+id/menueslist"
+        tools:layout="@layout/menus_fragment"
+        android:label=""
+        android:name="com.noname.coffee_gate.presentation.menus.MenusFragment"
+        >
+
+        <argument android:name="machine_id"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true"
+            />
+        <action android:id="@+id/action_to_details"
+            app:destination="@+id/menuedetails"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_close_exit"
+            />
+    </fragment>
+</navigation>

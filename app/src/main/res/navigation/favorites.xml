@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/favorite"
+    android:id="@+id/favorites">
+
+    <fragment android:id="@+id/favorite"
+        tools:layout="@layout/favorite_fragment"
+        android:label=""
+        android:name="com.noname.coffee_gate.presentation.favorite.FavoriteFragment"
+        >
+
+        <action android:id="@+id/action_to_details"
+            app:destination="@+id/menuedetails"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_close_exit"
+            />
+    </fragment>
+</navigation>

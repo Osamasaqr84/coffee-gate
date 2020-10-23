@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/contact_us"
+    android:id="@+id/contact_us">
+
+    <fragment android:id="@+id/contact_us"
+        tools:layout="@layout/contact_us_fragment"
+        android:label=""
+        android:name="com.noname.coffee_gate.presentation.contactus.ContactUsFragment"
+        >
+
+    </fragment>
+</navigation>

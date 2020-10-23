@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    app:cardCornerRadius="30dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/notification_img"
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/cart_product"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.4" />
+
+
+        <TextView
+            android:id="@+id/notification_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Capatcheno"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/larg_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/notification_img"
+            app:layout_constraintTop_toTopOf="@+id/notification_img" />
+
+
+        <TextView
+            android:id="@+id/size_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Size : "
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/larg_text"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/notification_name"
+            app:layout_constraintTop_toBottomOf="@+id/notification_name" />
+
+        <ImageView
+            android:id="@+id/size_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/coffee"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/size_title"
+            app:layout_constraintTop_toTopOf="@+id/size_title" />
+
+
+        <TextView
+            android:id="@+id/suger_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Suger : "
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/larg_text"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/notification_name"
+            app:layout_constraintTop_toBottomOf="@+id/size_title" />
+
+        <ImageView
+            android:id="@+id/suger_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/no_suger"
+            app:layout_constraintBottom_toBottomOf="@+id/suger_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/size_title"
+            app:layout_constraintTop_toTopOf="@+id/suger_title" />
+
+
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:text="35 EGP"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/notification_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/notification_img" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

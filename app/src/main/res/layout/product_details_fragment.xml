@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground"
+    tools:context=".presentation.ProductDetailsFragment">
+
+    <ImageView
+        android:id="@+id/notification_img"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/product_details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/notification_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:text="cappuccino"
+        android:textColor="@color/text_color"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notification_img" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:gravity="center_vertical|end"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/notification_name"
+        app:layout_constraintTop_toTopOf="@+id/notification_name">
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/mini_larg_text" />
+
+        <ImageView
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/details_minus" />
+
+        <ImageView
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/details_plus" />
+
+        <ImageView
+            android:id="@+id/fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/fill_favorite" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="35 EGP"
+        android:textColor="@color/text_color"
+        app:layout_constraintStart_toStartOf="@id/notification_name"
+        app:layout_constraintTop_toBottomOf="@+id/notification_name" />
+
+    <View
+        android:id="@+id/delimiter1"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/gray_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_price"
+        app:layout_constraintWidth_percent="0.9" />
+
+
+    <TextView
+        android:id="@+id/product_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/size"
+        android:textColor="@color/text_color"
+        app:layout_constraintBottom_toBottomOf="@+id/sizes"
+        app:layout_constraintStart_toStartOf="@+id/delimiter1"
+        app:layout_constraintTop_toTopOf="@+id/sizes" />
+
+    <LinearLayout
+        android:id="@+id/sizes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="@+id/delimiter2"
+        app:layout_constraintStart_toEndOf="@+id/product_size"
+        app:layout_constraintTop_toBottomOf="@+id/delimiter1"
+        app:layout_constraintWidth_percent="0.5">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/size1" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/size2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/size3"
+
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/delimiter2"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/gray_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sizes"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <TextView
+        android:id="@+id/product_suger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/suger"
+        android:textColor="@color/text_color"
+        app:layout_constraintStart_toStartOf="@+id/delimiter2"
+        app:layout_constraintTop_toBottomOf="@+id/delimiter2" />
+
+
+    <LinearLayout
+        android:id="@+id/sugers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintEnd_toEndOf="@+id/delimiter3"
+        app:layout_constraintStart_toEndOf="@+id/product_suger"
+        app:layout_constraintTop_toBottomOf="@+id/delimiter2"
+        app:layout_constraintWidth_percent="0.5">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/no_suger" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/one_suger" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/two_suger" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/three_suger" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/delimiter3"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/gray_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_suger"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <TextView
+        android:id="@+id/extra_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/extra"
+        android:textColor="@color/text_color"
+        app:layout_constraintStart_toStartOf="@+id/delimiter2"
+        app:layout_constraintTop_toBottomOf="@+id/delimiter3" />
+
+    <EditText
+        android:id="@+id/et_extra_notes"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/round_inputs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/extra_notes"
+        app:layout_constraintWidth_percent="0.6" />
+
+
+    <View
+        android:id="@+id/delimiter4"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="35dp"
+        android:background="@color/gray_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extra_notes"
+        app:layout_constraintWidth_percent="0.9" />
+
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/total"
+        android:textColor="@color/text_color"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/delimiter2"
+        app:layout_constraintTop_toBottomOf="@+id/delimiter4" />
+
+
+    <TextView
+        android:id="@+id/total_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:text="35 EGP"
+        android:textColor="@color/text_color"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/delimiter4"
+        app:layout_constraintTop_toBottomOf="@+id/delimiter4" />
+
+
+    <TextView
+        android:id="@+id/add_to_cart"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/round_solid_inputs"
+        android:gravity="center"
+        android:text="@string/add_to_cart"
+        android:textColor="@color/text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/delimiter4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total"
+        app:layout_constraintWidth_percent="0.45" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

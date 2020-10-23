@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/orders"
+    android:id="@+id/orders">
+
+    <fragment android:id="@+id/orders"
+        tools:layout="@layout/orders_fragment"
+        android:label=""
+        android:name="com.noname.coffee_gate.presentation.orders.OrdersFragment"
+        >
+        <action
+            android:id="@+id/action_orders_to_order_details"
+            app:destination="@id/order_details" >
+
+            <argument android:name="order_id"
+                app:nullable="true"
+                app:argType="string"
+                android:defaultValue="null"
+                />
+        </action>
+    </fragment>
+
+    <fragment android:id="@+id/order_details"
+        tools:layout="@layout/order_details_fragment"
+        android:label=""
+        android:name="com.noname.coffee_gate.presentation.orders.OrderDetailsFragment"
+        />
+
+</navigation>
